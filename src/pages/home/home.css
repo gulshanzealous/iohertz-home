@@ -15,7 +15,7 @@ body{
 .cover-container{
     grid-row: 1/9;
     grid-column: 1/9;
-    background-image: url('../../resources/images/10.jpeg');
+    background-image: url('../../resources/images/10-min.jpeg');
     background-size: cover;
     background-repeat: none;
 }
@@ -33,7 +33,6 @@ body{
     background-color: #113558;
 }
 .scroller-white{
-    padding-top:35px;
     background-color: #113558;
     box-shadow:10px 0px #444;
 }
@@ -73,7 +72,7 @@ body{
 }
 
 
-.cover-second-container{
+.desc-wrapper-one{
     height: 600px;
 }
 
@@ -87,14 +86,11 @@ body{
         grid-gap: 5px 5px;
     }
 
-    .desc-wrapper-one{
-        height: 600px;
-    }
-
     .header-container{
         grid-row: 1/2;
         grid-column: 1/9;
-        position: sticky;
+        position: fixed;
+        height:70px;
         top:0;
         color: #fff;
         display: flex;
@@ -141,13 +137,22 @@ body{
         box-shadow: 1px 3px #555;
     }
 
-    .cover-second-container{
+    .desc-wrapper-one{
         height: 1000px;
         display: grid;
-        grid-template-rows: 70px repeat(7,1fr);
-        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: repeat(7,1fr);
+        grid-template-columns: 50px repeat(7,1fr) 50px;
         grid-gap: 5px 5px;
+        background:linear-gradient(#7E919D,#fff);
     }
+
+    .products-heading{
+        grid-row: 2/3;
+        grid-column: 5/6;
+        background-color:#0df;
+    }
+
+    
     
 
 }

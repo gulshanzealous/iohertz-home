@@ -52,7 +52,9 @@ class Home extends Component {
                         <div className='intro-normal-text' >
                             At IOhertz, we create products which bring seamless connectivity to industries, 
                             <br />
-                            smart cities and homes using revolutionary technologies like LoRaWAN.
+                            smart cities and homes using revolutionary technologies like LoRaWAN,
+                            <br/>
+                            NB-IoT, Bluetooth 5.0, 4G LTE.
                             <br/>
                             Join us in our mission to create a proactive, smarter and brighter world.
                         </div>
@@ -65,6 +67,7 @@ class Home extends Component {
                     </div>
                     
                     <div className='second-container' > 
+
                     </div>
                     
                     <div className='third-container' > 
@@ -77,10 +80,16 @@ class Home extends Component {
 
                 <div className='desc-wrapper-one'>
 
-                    <div className='cover-second-container'>
+                    <div className='products-heading'>
+                        Our products and their impact
                     </div>
+
+
                     
                 </div>
+
+                
+
             </div>
         )
     }

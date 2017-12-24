@@ -16,7 +16,6 @@ class Menubar extends Component {
     
       render() {
         const { activeItem } = this.state
-        console.log(document.documentElement.clientWidth)
         return (
             <div className='container' >
                 {
@@ -31,7 +30,7 @@ class Menubar extends Component {
                             Products
                         </div>
                         <div className='item-menu'>
-                            Use Cases
+                            Solutions
                         </div>
                         <div className='item-menu'>
                             Contact Us
@@ -57,7 +56,7 @@ class Menubar extends Component {
                                     Products
                                 </div>
                                 <div className='item-menu-column'>
-                                    Use Cases
+                                    Solutions
                                 </div>
                                 <div className='item-menu-column'>
                                     Contact Us
