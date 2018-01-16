@@ -1,6 +1,7 @@
 import { Menu, Dropdown, Button } from 'semantic-ui-react'
 import React,{Component} from 'react'
 import './menubar.css'
+import logo from '../../../resources/images/logo100.png'
 
 class Menubar extends Component {
     state = { 
@@ -22,7 +23,8 @@ class Menubar extends Component {
                     document.documentElement.clientWidth > 1024 ? 
                     <div className='menu-container' >
                         <div className='item item-one'>
-                            IOhertz
+                            <img src={logo} style={{ height:'45px',width:'45px' }} />
+                            <span>IOhertz</span>
                         </div>
                         <div className='item-gap'>
                         </div>

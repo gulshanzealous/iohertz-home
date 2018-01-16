@@ -65,25 +65,14 @@ class Home extends Component {
                             Explore with us
                         </Button>
                     </div>
-                    
-                    <div className='second-container' > 
-
-                    </div>
-                    
-                    <div className='third-container' > 
-                    </div>
-                    
-                    <div className='four-container' > 
-                    </div>
 
                 </div>
 
                 <div className='desc-wrapper-one'>
 
-                    <div className='products-heading'>
+                    {/* <div className='products-heading'>
                         Our products and their impact
-                    </div>
-
+                    </div> */}
 
                     
                 </div>
@@ -96,8 +85,6 @@ class Home extends Component {
 }
 
 export default Home
-
-
 
 
 

@@ -26,6 +26,10 @@
 .item-one{
     flex:1 1 0%;
     font-size:1.4em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
 }
 
 .menu-columnar{
