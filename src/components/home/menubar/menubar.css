@@ -24,11 +24,11 @@
 }
 
 .item-one{
-    flex:1 1 0%;
-    font-size:1.4em;
+    flex:2 2 0%;
+    font-size:1.3em;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     cursor: pointer;
 }
 
@@ -95,5 +95,9 @@
 
     .item-one{
         font-size:1.4em;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        cursor: pointer;
     }
 }    

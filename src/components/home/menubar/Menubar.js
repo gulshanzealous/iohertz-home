@@ -42,7 +42,8 @@ class Menubar extends Component {
                     <div className='container'>
                         <div className='menu-container' >
                             <div className='item item-one'>
-                                IOhertz
+                                <img src={logo} style={{ height:'30px',width:'30px' }} />
+                                <span>IOhertz</span>
                             </div>
                             <div className='item-gap'>
                             </div>
