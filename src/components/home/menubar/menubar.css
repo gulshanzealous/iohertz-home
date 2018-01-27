@@ -23,15 +23,23 @@
     font-family: 'Lucida Grande' ,Arial, sans-serif;
 }
 
-.item-one{
-    flex:2 2 0%;
+.home-anchor{
+    flex:1 1 0%;
     font-size:1.3em;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     cursor: pointer;
+
 }
 
+.item-one{
+    flex:1 1 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
 .menu-columnar{
     padding-top:5px; 
     animation: 
@@ -93,11 +101,21 @@
 
     }
 
-    .item-one{
-        font-size:1.4em;
+    .home-anchor{
+        flex:1 1 0%;
+        font-size:1.3em;
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        justify-content: space-around;
+        cursor: pointer;
+
+    }
+
+    .item-one{
+        flex:1 1 0%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         cursor: pointer;
     }
 }    

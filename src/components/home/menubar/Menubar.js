@@ -23,27 +23,35 @@ class Menubar extends Component {
                     document.documentElement.clientWidth > 1024 ? 
                     <div className='menu-container' >
                         <div className='item item-one'>
-                            <img src={logo} style={{ height:'45px',width:'45px' }} />
-                            <span>IOhertz</span>
+                            <a href='#home-wrapper' className='home-anchor' >
+                                <img src={logo} style={{ height:'45px',width:'45px' }} />
+                                <span>IOhertz</span>
+                            </a>
                         </div>
                         <div className='item-gap'>
                         </div>
                         <div className='item-menu'>
-                            Products
+                            <a href="#products-section">
+                                Products
+                            </a>
                         </div>
                         <div className='item-menu'>
-                            Solutions
+                            How it works
                         </div>
                         <div className='item-menu'>
-                            Contact Us
+                            <a href='#contact-us'>
+                                Contact Us
+                            </a>
                         </div>
                     </div>
                     :
                     <div className='container'>
                         <div className='menu-container' >
                             <div className='item item-one'>
-                                <img src={logo} style={{ height:'30px',width:'30px' }} />
-                                <span>IOhertz</span>
+                                <a href='#home-wrapper' className='home-anchor' >
+                                    <img src={logo} style={{ height:'30px',width:'30px',marginRight:'10px' }} />
+                                    <span>IOhertz</span>
+                                </a>
                             </div>
                             <div className='item-gap'>
                             </div>
@@ -56,13 +64,17 @@ class Menubar extends Component {
                             this.state.showMenu &&    
                             <div className='menu-columnar' >
                                 <div className='item-menu-column'>
-                                    Products
+                                    <a href="#products-section">
+                                        Products
+                                    </a>
                                 </div>
                                 <div className='item-menu-column'>
-                                    Solutions
+                                    How it works
                                 </div>
                                 <div className='item-menu-column'>
-                                    Contact Us
+                                    <a href='#contact-us'>
+                                        Contact Us
+                                    </a>
                                 </div>
                             </div>
                         }
