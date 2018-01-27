@@ -290,7 +290,7 @@ a:hover{
     .desc-wrapper-one{
         height: 1000px;
         display: grid;
-        grid-template-rows: 120px repeat(4,1fr) 0px;
+        grid-template-rows: 150px repeat(4,1fr) 0px;
         grid-template-columns: 250px repeat(3,1fr) 250px;
         grid-column-gap: 50px;
         grid-row-gap: 0px;
@@ -321,6 +321,7 @@ a:hover{
         text-align: left;
         padding: 0px 0px 40px 0px;
         line-height: 1.6em;
+        font-size:1em;
     }
 
     .product-link-button{

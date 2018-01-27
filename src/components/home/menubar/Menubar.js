@@ -39,7 +39,7 @@ class Menubar extends Component {
                             How it works
                         </div>
                         <div className='item-menu'>
-                            <a href='#contact-us'>
+                            <a href='#contact-us-large'>
                                 Contact Us
                             </a>
                         </div>

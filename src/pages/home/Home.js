@@ -171,7 +171,7 @@ class Home extends Component {
                 </div>
                     
                 
-                <div className='footer-large' id='contact-us' >
+                <div className='footer-large' id='contact-us-large' >
                     <div className='company-markers-footer' >
                         <img src={logo} className='footer-logo' />
                         <div className='company-name-footer' > IOhertz Technologies Private Limited </div>
