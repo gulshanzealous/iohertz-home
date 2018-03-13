@@ -4,16 +4,15 @@
     width:100%;
 }
 
-
 .menu-container{
     height: 100%;
     width:100%;
     display: flex;   
-    align-items: center;
-
+    align-items: center; 
 }
+
 .item-gap{
-    flex:3 3 0%;
+    flex:6 6 0%;
 }
 
 .item-menu{
@@ -21,6 +20,10 @@
     cursor: pointer;
     text-transform: capitalize;
     font-family: 'Lucida Grande' ,Arial, sans-serif;
+}
+
+.item-menu:hover{
+
 }
 
 .home-anchor{
@@ -40,67 +43,27 @@
     align-items: center;
     cursor: pointer;
 }
-.menu-columnar{
-    padding-top:5px; 
-    animation: 
-    stretch
-    0.5s
-    linear
-    0s
-    alternate
-    1
-    none
-    running;
 
-}
-
-@keyframes stretch {
-    /* 0% {
-        transform: translate(0px);
-    }
-    50% {
-        transform: translate(5px);        
-    }
-    100% {
-        transform: translate(10px);
-    } */
-  }
-  
-
-.item-menu-column:last-child{
-    padding: 5px 5px 0px 5px;
-}
-
-.item-menu-column{
-    font-size:0.8em;
-    padding:5px;
-
-}
-
-@media only screen  and (min-width : 1024px) {
+@media only screen  and (max-width : 1024px) {
 
     .menu-container{
         height: 100%;
         width:100%;
         display: flex;   
-        align-items: center; 
+        align-items: center;
+    
     }
-
     .item-gap{
-        flex:6 6 0%;
+        flex:3 3 0%;
     }
-
+    
     .item-menu{
         flex:1 1 0%;
         cursor: pointer;
         text-transform: capitalize;
         font-family: 'Lucida Grande' ,Arial, sans-serif;
     }
-
-    .item-menu:hover{
-
-    }
-
+    
     .home-anchor{
         flex:1 1 0%;
         font-size:1.3em;
@@ -108,9 +71,9 @@
         justify-content: space-between;
         align-items: center;
         cursor: pointer;
-
+    
     }
-
+    
     .item-one{
         flex:1 1 0%;
         display: flex;
@@ -118,4 +81,41 @@
         align-items: center;
         cursor: pointer;
     }
+    .menu-columnar{
+        padding-top:5px; 
+        animation: 
+        stretch
+        0.5s
+        linear
+        0s
+        alternate
+        1
+        none
+        running;
+    
+    }
+    
+    @keyframes stretch {
+        /* 0% {
+            transform: translate(0px);
+        }
+        50% {
+            transform: translate(5px);        
+        }
+        100% {
+            transform: translate(10px);
+        } */
+      }
+      
+    
+    .item-menu-column:last-child{
+        padding: 5px 5px 0px 5px;
+    }
+    
+    .item-menu-column{
+        font-size:0.8em;
+        padding:5px;
+    
+    }
+    
 }    
