@@ -5,8 +5,19 @@ import logo from '../../../resources/images/logo100.png'
 
 class Menubar extends Component {
     state = { 
-        activeItem: 'home',
-        showMenu:false
+        showMenu:false,
+        activeItem:'home',
+        pageWidth: document.documentElement.clientWidth
+    }
+
+    componentDidMount = () => {
+        window.addEventListener("resize",this.setWidth)        
+    }
+
+    setWidth = () => {
+        this.setState({
+            pageWidth: document.documentElement.clientWidth
+        })
     }
     
     handleItemClick = (e, { name }) => this.setState({ activeItem: name })
@@ -15,14 +26,19 @@ class Menubar extends Component {
         this.setState({ showMenu: !this.state.showMenu })
     }
     
-      render() {
-        const { activeItem } = this.state
+    componentWillUnmount = () => {
+        window.removeEventListener("resize",this.setWidth)
+    }
+
+    render() {
+        const { activeItem, showMenu,pageWidth } = this.state
+        console.log(pageWidth)
         return (
             <div className='container' >
                 {
-                    document.documentElement.clientWidth > 1024 ? 
+                    pageWidth > 1024 ? 
                     <div className='menu-container' >
-                        <div className='item item-one'>
+                        <div className='item-one'>
                             <a href='#home-wrapper' className='home-anchor' >
                                 <img src={logo} style={{ height:'45px',width:'45px' }} />
                                 <span>IOhertz</span>
@@ -47,7 +63,7 @@ class Menubar extends Component {
                     :
                     <div className='container'>
                         <div className='menu-container' >
-                            <div className='item item-one'>
+                            <div className='item-one'>
                                 <a href='#home-wrapper' className='home-anchor' >
                                     <img src={logo} style={{ height:'30px',width:'30px',marginRight:'10px' }} />
                                     <span>IOhertz</span>
@@ -61,7 +77,7 @@ class Menubar extends Component {
                         </div>
                         
                         {
-                            this.state.showMenu &&    
+                            showMenu &&    
                             <div className='menu-columnar' >
                                 <div className='item-menu-column'>
                                     <a href="#products-section">
@@ -82,7 +98,11 @@ class Menubar extends Component {
                 }
             </div> 
         )
-      }
+    }
+
 }
 
 export default Menubar
+
+
+

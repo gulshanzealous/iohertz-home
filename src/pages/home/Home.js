@@ -190,13 +190,3 @@ class Home extends Component {
 
 export default Home
 
-
-
-
-// Connectivity is the heartbeat of IoT
-
-//                         At IOhertz, we create products which bring seamless connectivity to all devices.
-//                         With industrial IoT and smart city applications as the immediate target, our gateway operates on the 
-//                         revolutionary technologies like LoRaWAN to provide long range ( upto 15 km ) and long lasting ( upto 5 years )
-//                         communications for a smarter, brighter and safer tomorrow.
-//                         Explore with us.
