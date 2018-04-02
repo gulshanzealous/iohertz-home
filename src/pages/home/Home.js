@@ -12,37 +12,16 @@ import { Button } from 'semantic-ui-react'
  
 class Home extends Component {
 
-    state = {
-        scrolledFromTop:false
-    }
-
-    componentDidMount(){
-        window.addEventListener('scroll',this.handleScroll)
-    }
-
-    componentWillUnmount(){
-        window.removeEventListener('scroll',this.handleScroll)
-    }
-
-    handleScroll = (e) => {
-        if(window.pageYOffset > 100){
-            return this.setState({ scrolledFromTop:true })
-        }
-        this.setState({ scrolledFromTop:false })
-    }
 
     render(){
-        const headerClasses = `header-container ${this.state.scrolledFromTop? `scroller-white` : null}`
         return(
             <div>
+            
                 <div className='home-wrapper' id='home-wrapper' >
 
                     <div className='cover-container'>
                     </div>
 
-                    <div className={headerClasses}>
-                        <Menubar />
-                    </div>
 
                     <div className='first-container' > 
                         <div className='intro-large-text' >
@@ -154,34 +133,8 @@ class Home extends Component {
 
                 </div>
 
-                
-                {/* <div className='desc-wrapper-one'>
+                {/* what we do */}
 
-                </div> */}
-
-                <div className='footer' id='contact-us' >
-                    <div className='company-markers-footer' >
-                        <img src={logo} className='footer-logo' />
-                        <div className='company-name-footer' > IOhertz Technologies Private Limited </div>
-                    </div>
-                    <div className='contact-details'>
-                        <div className='phone'> +91-8447023040  | </div>
-                        <div className='email'> contact@iohertz.com </div>
-                    </div>
-                </div>
-                    
-                
-                <div className='footer-large' id='contact-us-large' >
-                    <div className='company-markers-footer' >
-                        <img src={logo} className='footer-logo' />
-                        <div className='company-name-footer' > IOhertz Technologies Private Limited </div>
-                    </div>
-                    <div className='contact-details'>
-                        <div className='phone'> +91-8447023040  | </div>
-                        <div className='email'> contact@iohertz.com </div>
-                    </div>
-                </div>
-                    
 
             </div>
         )

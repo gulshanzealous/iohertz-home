@@ -2,6 +2,7 @@
 .container{
     height: 100%;
     width:100%;
+    z-index: 100;
 }
 
 .menu-container{
@@ -82,6 +83,9 @@
         cursor: pointer;
     }
     .menu-columnar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding-top:5px; 
         animation: 
         stretch

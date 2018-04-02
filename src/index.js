@@ -8,11 +8,16 @@ import { BrowserRouter } from 'react-router-dom'
 import App from './App';
 // import registerServiceWorker from './registerServiceWorker';
 
-// ReactDOM.render(
-render(
+ReactDOM.render(
+// render(
 <BrowserRouter>
     <App />
 </BrowserRouter>
 , 
 document.getElementById('root'));
 // registerServiceWorker();
+
+
+
+// for react snapshot
+// "build": "GENERATE_SOURCEMAP=false react-scripts build && react-snapshot",

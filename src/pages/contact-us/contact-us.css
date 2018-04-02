@@ -1,0 +1,200 @@
+
+
+.section-one{
+    height:700px;
+    width:100%;
+    background: linear-gradient(#113558,rgb(12, 148, 148));
+    display: grid;
+    grid-row-gap: 20px;
+    grid-column-gap: 50px;
+    grid-template-rows: 0.7fr repeat(7,1fr) 0.1fr;
+    grid-template-columns: 5px 1fr 5px;
+}
+
+.contact-heading{
+    grid-row:2/3;
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.contact-map{
+    grid-row:3/6;
+    grid-column: 2/3;
+    border-radius: 5px;
+}
+
+.contact-address{
+    grid-row:6/9;
+    grid-column: 2/3;
+    color:#fff;
+    font-size:1em;
+    letter-spacing: 3px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(6, 75, 16); */
+}
+
+.contact-address-value{
+
+}
+
+.contact-email{
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 0.9em;
+    color:#fff;
+}
+
+.contact-phone{
+    width: 80%;    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    color:#fff;
+}
+
+@media only screen and (min-width:900px) {
+    
+    .section-one{
+        height:700px;
+        width:100%;
+        background: linear-gradient(rgb(21, 26, 99),rgb(248, 250, 250));
+        display: grid;
+        grid-row-gap: 20px;
+        grid-column-gap: 50px;
+        grid-template-rows: 0.7fr repeat(6,1fr) 0.1fr;
+        grid-template-columns: 0.5fr repeat(6,1fr) 0.5fr;
+    }
+
+    .contact-heading{
+        grid-row:2/3;
+        grid-column: 4/8;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        color:#fff;
+        font-size: 1.8em;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+    }
+
+    .contact-map{
+        grid-row:3/6;
+        grid-column: 5/8;
+        border-radius: 5px;
+    }
+
+    .contact-address{
+        grid-row:3/6;
+        grid-column: 2/5;
+        color:#fff;
+        font-size:1.1em;
+        letter-spacing: 3px;
+        line-height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        /* background-color: rgb(6, 75, 16); */
+    }
+
+    .contact-address-value{
+
+    }
+
+    .contact-email{
+        width: 60%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 0.9em;
+        color:#fff;
+    }
+
+    .contact-phone{
+        width: 60%;    
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 0.9em;
+        color:#fff;
+    }
+}
+
+@media only screen and (min-width:1200px){
+
+    .section-one{
+        height:900px;
+        width:100%;
+        background: linear-gradient(rgb(21, 26, 99),rgb(248, 250, 250));
+        display: grid;
+        grid-row-gap: 20px;
+        grid-column-gap: 50px;
+        grid-template-rows: 0.7fr repeat(6,1fr) 0.1fr;
+        grid-template-columns: 0.5fr repeat(6,1fr) 0.5fr;
+    }
+    
+    .contact-heading{
+        grid-row:2/3;
+        grid-column: 4/7;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        color:#fff;
+        font-size: 1.8em;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+    }
+    
+    .contact-map{
+        grid-row:3/6;
+        grid-column: 5/7;
+        border-radius: 5px;
+    }
+    
+    .contact-address{
+        grid-row:3/6;
+        grid-column: 3/5;
+        color:#fff;
+        font-size:1.2em;
+        letter-spacing: 3px;
+        line-height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background-color: rgb(6, 75, 16); */
+    }
+    
+    .contact-email{
+        width: 60%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1em;
+        color:#fff;
+    }
+    
+    .contact-phone{
+        width: 60%;    
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1em;
+        color:#fff;
+    }
+    
+}
